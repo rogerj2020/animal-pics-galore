@@ -81,7 +81,7 @@ Animal Pics Galore! was made by [Roger Jefferies](https://rogerj-cv-site.vercel.
 
 ## Features
 
--  Fetch and review all of your warm and fuzzy and animal pics!
+-  Fetch and review all of your warm and fuzzy animal pics!
 -  Built with Node.js, Express, MongoDB, and Pug
 -  Fully Containerized Solution
 -  Web UI and REST API available
