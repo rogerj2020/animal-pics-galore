@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  form(role='form' method='GET' action='/images/download')
+    h1= title
+    p Welcome to #{title}
+    br
+    p Choose Animal Type:
+    select#animalType(type='select', name='animalType')
+      option(value='0') Cats
+      option(value='1') Dogs
+      option(value='2') Bears
+    br
+    p Enter the number of pics to fetch:
+    input#picCount(type='text', name='picCount')
+    br
+    br
+    button.btn.btn-primary(type="submit") Fetch Pics!
