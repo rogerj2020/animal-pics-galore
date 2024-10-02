@@ -37,13 +37,13 @@ docker-compose up -d
 
 ## Start the Server
 
-If running locally, start the app first:
+If running locally, start the server first:
 ```
 npm run start
 ```
-*(This step is not required when running in Docker)*
+*(The server is started automatically when running in Docker)*
 
-Once the app is running (locally or in Docker), access the Web UI at:
+Once the server is running (locally or in Docker), access the Web UI at:
 ```
 http://localhost:3000/
 ```
