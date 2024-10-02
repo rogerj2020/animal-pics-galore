@@ -88,5 +88,5 @@ Animal Pics Galore! was made by [Roger Jefferies](https://rogerj-cv-site.vercel.
 -  Compatible with all modern browsers
 
 ## Credits
-- [Express](hhttps://github.com/expressjs/express)
+- [Express](https://github.com/expressjs/express)
 - [Node.js](https://nodejs.org/)
