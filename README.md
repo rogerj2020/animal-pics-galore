@@ -34,7 +34,7 @@ Build and start Docker Container:
 docker-compose up -d
 ```
 
-### Database Setup:
+### Database Setup
 
 When running the server and app locally, a running MongoDB instance is required for data storage. A sample/seed MongoDB database dump is provided in this project (file: `db/dump.db.gz`). The `mongorestore` command can be used to restore the sample database into an running MongoDB instance.
 
