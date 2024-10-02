@@ -60,7 +60,7 @@ The Animal Pics Galore! app can be accessed via a built-in web UI or REST API.
 *(Currently, UI results are returned as JSON responses.)*
 
 ### Fetching Pics using the REST API:
-1. Send a GET Request to the `/images endpoint` to retrieve all cached pics.
+1. Send a GET Request to the `/images` endpoint to retrieve all cached pics.
 2. Send a GET Request to the `/images/latest` endpoint to retrieve the latest cached pic.
 3. Send a GET Request to the `/images/download` endpoint with the following URL query parameters, to fetch more pics:
     * **animalType:** A numeric code indicating the type of animal to fetch pics for.
