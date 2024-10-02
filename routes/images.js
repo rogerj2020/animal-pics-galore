@@ -80,7 +80,7 @@ router.get("/download", async (req, res) => {
       const base64Data = Buffer.from(data, 'binary').toString('base64');
       let newImageDocument = {
         "fetchDate": new Date(),
-        "type": "Cat",
+        "type": animalTypeName,
         "image": base64Data
       }
       results.images.push(newImageDocument);
