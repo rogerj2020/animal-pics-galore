@@ -70,15 +70,14 @@ router.get("/download", async (req, res) => {
     return;
   }
 
-  
   let imageCount = req.query['picCount'];
 
   try{
+    var db = await require('../db/conn.js').getDb();
+    let collection = await db.collection("animal_pics_galore");
     for(var i=0; i < imageCount; i++){
       const data = await downloadImage(imageFetchUrl);
       const base64Data = Buffer.from(data, 'binary').toString('base64');
-      var db = await require('../db/conn.js').getDb();
-      let collection = await db.collection("animal_pics_galore");
       let newImageDocument = {
         "fetchDate": new Date(),
         "type": "Cat",
