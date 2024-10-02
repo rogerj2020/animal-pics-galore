@@ -27,13 +27,32 @@ Install Dependencies:
 npm install
 ```
 
-
 ### Docker Container
 
 Build and start Docker Container:
 ```
 docker-compose up -d
 ```
+
+### Database Setup:
+
+When running the server and app locally, a running MongoDB instance is required for data storage. A sample/seed MongoDB database dump is provided in this project (file: `db/dump.db.gz`). The `mongorestore` command can be used to restore the sample database into an running MongoDB instance.
+
+**Example seed data restoration:**
+
+```
+mongorestore --host=localhost:27017 --archive=./db/dump.db.gz --gzip
+```
+
+*(When using Docker, this process is executed automatically in the default docker command found in the Dockerfile.)*
+
+
+**The `MONGODB_HOST` Environment Variable**
+
+The MongoDB hostname (and port) can set using the `MONGODB_HOST` environment variable. If set, the `MONGODB_HOST` environment variable is expected to be set to the hostname (if using the default MongoDB port of `27017`), or the hostname and port in this format: `{hostname}:{port}`. If the `MONGODB_HOST` environment variable is not set, the server will try to access MongoDB on localhost, using port `27017`.
+
+*(When using Docker, the `MONGODB_HOST` environment variable can be set in the Dockerfile or `docker` command line arguments.)*
+
 
 ## Start the Server
 

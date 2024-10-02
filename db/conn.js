@@ -3,8 +3,8 @@ const MongoClient = require('mongodb').MongoClient;
 module.exports = {
   _db: null,
   connect: async function () {
-    const mongoHost = process.env['MONGODB_HOST'] ? process.env['MONGODB_HOST'] : "localhost";
-    const connectionString = `mongodb://${mongoHost}:27017`;
+    const mongoHost = process.env['MONGODB_HOST'] ? process.env['MONGODB_HOST'] : "localhost:27017";
+    const connectionString = `mongodb://${mongoHost}`;
     const dbName = 'animal_pics_galore_db';
     
     // Create a new MongoClient

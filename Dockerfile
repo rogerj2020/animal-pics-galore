@@ -1,7 +1,7 @@
 FROM node:18-alpine
 
 WORKDIR /home/node/app
-ENV MONGODB_HOST mongodb
+ENV MONGODB_HOST mongodb:27017
 
 COPY . /home/node/app
 
